@@ -41,39 +41,6 @@ img {
     height: auto;
 }
 
-
-.catogbalk {
-    grid-row: 3 / 4;
-    grid-column: 2 / 3;
-
-    display: flex;
-    gap: 40px;
-    justify-content: flex-start;
-    align-items: end;
-
-    font-size: 0.80rem;
-}
-
-.catogbalk2 {
-    grid-row: 3 / 4;
-    grid-column: 2 / 3;
-
-    display: flex;
-    gap: 20px;
-    justify-content: flex-end;
-    align-items: end;
-
-    font-size: 0.70rem;
-
-    padding-right: 150px;
-}
-
-.catogbalk2 img {
-    align-self: center;
-    margin: 10px 0px 0px;
-    margin-left: 50px;
-}
-
 .shophulp {
     margin-left: 10px;
     font-family: Produkt;
@@ -102,32 +69,6 @@ img {
 .afbeeldinggroot {
     grid-row: 5 / 6;
     grid-column: 2 / 3;
-}
-
-.catogline {
-    grid-column: 1 / 4;
-}
-
-.catogline hr {
-    border: 0.4px solid #D4D4D4;
-    opacity: 50%;
-}
-
-.test {
-    display: flex;
-    gap: 5px;
-
-    font-size: 0.70rem;
-    grid-row: 3 / 4;
-    grid-column: 2 / 3;
-    justify-content: end;
-    align-items: center;
-    padding-left: 30px;
-    padding-top: 10px;
-}
-
-.test img {
-    max-height: 30%;
 }
 
 .afbeeldingboven {
@@ -407,4 +348,57 @@ img {
 
 .searchHeader .account .icon:hover {
     border: 2px solid white
+}
+
+.categories {
+    display: flex;
+    border-bottom: 1px solid #D4D4D4;
+    height: 50px;
+}
+
+.categories .wrapper {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    align-items: center;
+    height: inherit;
+    width: 100%;
+}
+
+.categories .wrapper > div {
+    display: flex;
+    gap: 20px;
+}
+
+.categories p {
+    cursor: pointer;
+}
+
+.categories .wrapper > div:first-child p {
+    padding-inline: 10px;
+    padding-block: calc(25px - .4rem - 2px);
+    border-bottom: 2px solid transparent;
+}
+
+.categories .wrapper > div:first-child p:hover {
+    border-bottom: 2px solid #0000a4;
+}
+
+.categories .wrapper > div:last-child {
+    font-size: 0.7rem;
+}
+
+.categories .wrapper > div:last-child p:hover {
+    text-decoration: underline;
+}
+
+.categories .lang {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.categories .lang img {
+    height: 15px;
 }
