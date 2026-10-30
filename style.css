@@ -67,124 +67,35 @@ img {
 }
 
 .kleineafbeeldingen {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
     gap: 20px;
-    grid-row: 6 / 7;
-    grid-column: 2 / 3;
-
-    margin-top: 60px;
 }
 
 .kleineafbeeldingen img {
     border-radius: 15px;
-    width: 11.6vw;
-    height: 35vh;
 }
 
 .ietsgrotereafbeeldingen {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    grid-row: 7 / 8;
-    grid-column: 2 / 3;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .ietsgrotereafbeeldingen img {
     border-radius: 15px;
-    width: 18.1vw;
 }
 
-.ondertekst {
-    grid-row: 8 / 9;
-    grid-column: 2 / 3;
-
-    display: grid;
-    grid-template-columns: 13vw 13vw 13vw 13vw 13vw 13vw;
-    grid-template-rows: 17vh 50vh;
-    padding-top: 50px;
+h2 {
+    font-size: 2rem;
+    font-family: Arvor;
+    font-weight: 500;
 }
 
 .ot {
     font-size: 0.8rem; 
 }
-
-.trendingtekstthee {
-    grid-column: 1/7;
-    font-size: 2rem;
-    font-family: Arvor;
-}
-
-.trendingtekst {
-    grid-row: 9 / 10;
-    grid-column: 2 / 3;
-
-    font-size: 2rem;
-    font-family: Arvor;
-}
-
-.TrendingAfbeeldingen {
-    grid-row: 9 / 10;
-    grid-column: 2 / 3;
-    display: flex;
-    gap: 20px;
-    padding-top: 100px;
-}
-
-.Trendyafbt {
-    grid-row: 9 / 10;
-    grid-column: 2 / 3;
-    font-weight: bold;
-    font-size: 0.8rem;
-    align-self: end;
-}
-
-.trend img {
-    width: 11.7vw;
-    height: 25vh;
-    border-radius: 15px;
-
-    align-self: center;
-}
-
-.trend p {
-    width: 11.7vw;
-    height: 20px;
-    padding: 5px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    font-weight: bold;
-    font-size: 0.8rem;
-}
-
-.theeafbeeldingen {
-    display: flex;
-    gap: 20px;
-    padding-top: 30px;
-}
-
-.thee img {
-    width: 11vw;
-    height: 22vh;
-    border-radius: 15px;
-    grid-column: 8 / 9;
-    grid-row: 2 / 3;
-
-    align-self: center;
-}
-
-.thee p {
-    width: 11.7vw;
-    height: 20px;
-    padding: 5px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    font-weight: bold;
-    font-size: 0.8rem;
-
-}
-
 
 .prijs {
     width: 11.7vw;
@@ -389,7 +300,34 @@ img {
     height: 15px;
 }
 
-.hero img{
+img.hero {
     border-radius: 15px;
-    margin-top: 30px;
+    margin-block: 30px;
+}
+
+.showcase {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.showcase .item {
+    display: flex;
+    flex-direction: column;
+}
+
+.showcase img {
+    border-radius: 15px;
+    align-self: center;
+}
+
+.showcase p {
+    width: 11.7vw;
+    height: 20px;
+    padding: 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 0.8rem;
 }
