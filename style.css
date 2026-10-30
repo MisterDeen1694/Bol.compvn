@@ -34,36 +34,11 @@ body {
     min-height: 100vh;
 
     font-family: Montserrat;
-
-    display: grid;
-    grid-template-columns: 12vw 76vw 12vw;
-    grid-template-rows: 5vh 10vh 7vh 3vh 46vh auto auto 70vh 18vh;
 }
 
 img {
     max-width: 100%;
     height: auto;
-}
-
-.header {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    font-size: 0.75rem;
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-    color: #0000a4;
-}
-
-
-#selectHeader {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-    place-self: flex-end;
-}
-
-#selectHeader img {
-    max-height: 25px;
 }
 
 .zoekbalkheader {
@@ -371,4 +346,42 @@ img {
     width: 11.7vw;
     font-size: 0.7rem;
     padding-top: 5px;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0px 30px;
+}
+
+.selectHeader {
+    display: flex;
+    align-items: center;
+    font-size: 0.75rem;
+    color: #0000a4;
+    justify-content: space-between;
+}
+
+.selectHeader > div {
+    display: flex;
+    gap: 20px;
+}
+
+.selectHeader .select {
+    color: #00852c;
+    background: rgb(242, 251, 245);
+    padding: 2px 0px 2px 7px;
+    font-size: 0.8rem;
+    border-radius: 2px;
+    text-decoration: none;
+    display: flex;
+}
+
+.selectHeader .select strong {
+    padding-right: 5px;
+}
+
+.selectHeader .select svg {
+    height: 17px;
+    align-self: center;
 }
