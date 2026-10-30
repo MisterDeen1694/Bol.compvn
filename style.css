@@ -41,66 +41,6 @@ img {
     height: auto;
 }
 
-.zoekbalkheader {
-    background-color: #0000a4;
-    display: grid;
-    grid-column: 1 / 4;
-    grid-row: 2 / 3;
-    align-items: center;
-
-    grid-template-columns: 12vw 15vw 500px 1fr 12vw;
-}
-
-#zoekbalk {
-    width: 500px;
-    height: 45px;
-    border-radius: 50px;
-    border: solid white 1px;
-    grid-column: 3;
-}
-
-.zoekbalkheaderrechts {
-    display: flex;
-    gap: 20px;
-    justify-content: end;
-    align-items: center;
-
-    color: white;
-    font-size: 0.75rem;
-
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-
-}
-
-.zoekbalkheaderrechts img {
-    max-height: 30px;
-}
-
-
-#vergrootglasicon {
-    max-height: 5vh;
-
-    justify-self: center;
-
-    position: absolute;
-    right: 10px;
-    top: 4px;
-
-    grid-column: 2 / 3;
-}
-
-.vergrootglasgroep {
-    position: relative;
-    width: 500px;
-}
-
-#bollogo {
-    height: 35px;
-    margin: auto 0 auto 0;
-
-    grid-column: 2;
-}
 
 .catogbalk {
     grid-row: 3 / 4;
@@ -384,4 +324,87 @@ img {
 .selectHeader .select svg {
     height: 17px;
     align-self: center;
+}
+
+.searchHeader {
+    background-color: #0000a4;
+    height: 72px;
+}
+
+.searchHeader .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+}
+
+.searchHeader .logo {
+    height: 35px;
+}
+
+.searchHeader .search {
+    display: flex;
+}
+
+.searchHeader .searchBar {
+    display: flex;
+    height: 45px;
+    width: 500px;
+}
+
+.searchHeader .searchBar input {
+    height: inherit;
+    border-radius: 50px 0px 0px 50px;
+    border: solid white 1px;
+    width: calc(100% - 50px);
+    padding-left: 25px;
+}
+
+.searchHeader .searchBar button {
+    height: inherit;
+    border-radius: 0px 50px 50px 0px;
+    border: solid white 1px;
+    background-color: white;
+    width: 50px;
+    font-size: 0px;
+    background-image: url(images/vergrootglas.png);
+    background-size: 28px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.searchHeader .account {
+    display: flex;
+    gap: 2px;
+    justify-content: end;
+    align-items: center;
+    font-size: .8rem;
+}
+
+.searchHeader .account a {
+        color: white;
+}
+
+.searchHeader .account .login {
+    text-decoration: none;
+    padding-block: 10px;
+}
+
+.searchHeader .account .login:hover {
+    text-decoration: underline;
+}
+
+.searchHeader .account .icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    border: 2px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchHeader .account .icon:hover {
+    border: 2px solid white
 }
